@@ -3,6 +3,15 @@ defmodule Calibrator do
 
   @moduledoc """
   Helps calibrate frequency drift after traveling through time to SAVE CHRISTMAS!!!
+
+  https://adventofcode.com/2018/day/1
+
+  run tests with: elixir calibrator.ex
+
+  Get answer within iex shell:
+    > import_file("calibrator.ex")
+    > Calibrator.run_with_file("input.txt", 0)
+    > ???
   """
 
   @spec run([pos_integer() | neg_integer()], accumulator()) :: pos_integer() | neg_integer()
