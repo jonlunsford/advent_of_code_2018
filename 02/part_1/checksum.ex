@@ -1,4 +1,17 @@
 defmodule Checksum do
+  @moduledoc """
+  Advent Of Code Day 02 Part 1
+
+  https://adventofcode.com/2018/day/2
+
+  run tests with: elixir calibrator.ex
+
+  Get answer within iex shell:
+    > import_file("checksum.ex")
+    > Checksum.run("input.txt")
+    > ???
+  """
+
   def run(%File.Stream{} = file_stream) do
     file_stream
     |> Enum.reduce([0, 0], fn(line, [sum_a, sum_b]) ->
