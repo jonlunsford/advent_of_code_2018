@@ -1,4 +1,17 @@
 defmodule StringDistance do
+  @moduledoc """
+  Advent Of Code Day 02 Part 2
+
+  https://adventofcode.com/2018/day/2
+
+  run tests with: elixir calibrator.ex
+
+  Get answer within iex shell:
+    > import_file("string_distance.ex")
+    > StringDistance.run("input.txt")
+    > ???
+  """
+
   def run(file) when is_binary(file) do
     file
     |> File.stream!([], :line)
